@@ -1,9 +1,10 @@
 changelog:
-  categories:            # リリースノートのカテゴリ設定
-    - title: Enhancement # リリースノートへ「Enhancement」というカテゴリを作成する
+  categories:
+    - title: Enhancement
       labels:
-        - enhancement    # 「Enhancement」へ掲載するプルリクエストのラベルを指定する
-    - title: Bug Fixes
-      labels:            # プルリクエストのラベルは複数定義できる
-        - bug
-        - fixes
+        - enhancement
+  exclude:           # リリースノートの除外設定
+    labels:          # 除外するラベル
+      - dependencies
+    authors:         # 除外するプルリクエスト作成者
+      - dependabot
